@@ -5,15 +5,28 @@
 	<title>Joshua Teuber's Personal</title>
 	<link href="final.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="scripts/login.js"></script>
 </head>
 
 <body>
+	<div id="popupbox"> 
+		<form name="login" action="" method="post">
+			<center>Username:</center>
+			<center><input name="username" size="14" /></center>
+			<center>Password:</center>
+			<center><input name="password" type="password" size="14" /></center>
+			<center><input type="submit" name="submit" value="login" /></center>
+		</form>
+	<br />
+	<center><a href="javascript:login('hide,0,0');">close</a></center> 
+	</div>
+
 	<h1><a href="index.html"><img src="final_banner.jpg" alt="Joshua Teuber banner"/></a></h1>
     <ul id="nav">
     	<li><a href="index.html">Home</a></li>
     	<li><a href="personal.html">Personal</a></li>
         <li><a href="education.html">Education</a></li>
-        <li><a href="accomplishments.html">Accomplishments</a></li>
+        <li><a href="javascript:login('show');">Login</a></li>
         <li><a href="game.html">Game</a></li>
     </ul>
     
